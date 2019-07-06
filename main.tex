@@ -19,6 +19,8 @@
 
 \def\bibfont{\footnotesize}
 
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
 \begin{document}
 
 \background{ % Set the background to an image (background.pdf)
@@ -42,9 +44,12 @@
     boxshade=plain
     }{}
     {Calculation of Auger recombination thresholds in narrow gap HgCdTe based QW heterostructures} % Poster title
-    {\vspace{1em} Kulikov N.S., Rumyantsev V.V., Zholudev M.S., Utochkin V.V., Morozov S.V.  \\ % Author names
+    {\vspace{1em} Kulikov N.S. \footnotemark[1], Rumyantsev V.V. \footnotemark[1] \footnotemark[2], Zholudev M.S. \footnotemark[2], Utochkin V.V. \footnotemark[1] \footnotemark[2], Morozov S.V. \footnotemark[1]  \\ % Author names
+    \footnotetext[1]{Lobachevsky State University of Nizhni Novgorod}
+    \footnotetext[2]{Institute for Physics of Microstructures RAS}
     {\smaller neilkulikov@gmail.com}} % Author email addresses
     {\includegraphics[scale=0.75]{logo.png}}
+
 
     \headerbox{Abstract}{name=intro,column=0,row=0}{
         Auger recombination is a three-particle threshold process. It can be considered 
