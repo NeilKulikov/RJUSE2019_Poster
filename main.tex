@@ -58,8 +58,8 @@
 
     \headerbox{Analityc relations}{name=anal,column=0,row=0,below=intro}{
         A problem can be defined mathematically. It is proposed to consider two different 
-        options CCHC \& HHCH processes. Also we can minimize the final state energy,
-        cause of conservation laws.
+        options: CCHC \& HHCH processes. Also we can minimize the final state energy,
+        it linearly depends on $\varepsilon_{th}$.
 
         \begin{equation}
             \begin{array}{l}
@@ -86,11 +86,11 @@
     }
 
     \headerbox{Algorithm description}{name=algo,column = 0,below=anal}{
-        The energy-momentum law can be calculated for HgCdTe heterostructures in Kane 
-        model 8x8 \cite{Zholudev:PRB:2012}. It can be interpolated with Akima cubic splines.
-        It provides enough smoothness but also helps to avoid parasitic oscillations.
+        The energy-momentum law can be calculated for HgCdTe heterostructures in the Kane 8x8 
+        model \cite{Zholudev:PRB:2012}. It can be interpolated with Akima cubic splines.
+        This trick provides enough smoothness and also helps to avoid parasitic oscillations.
 
-        The function \ref{gfunc} can be optimized with Lagrange method. Starting points are 
+        The function \ref{gfunc} can be optimized with the Lagrange method. Starting points can be 
         selected on sites with the same derivative \& second derivative sign. This fact ensures 
         finding the required points.
 
@@ -142,11 +142,11 @@
         above, shaded lines are responsible for the structure without 
         cadmium in the QWs.
         We can investigate the effect of cadmium content in quantum wells 
-        on threshold energy. As it can be shown lower concentration of Cd
+        on threshold energy. As it can be shown, lower concentration of Cd
         reduces side maximums and increases threshold energy.
         
         It would be interesting to investigate the dependence of the threshold 
-        energy on the composition of the barriers. As shown in Fig. \ref{tvsb}
+        energy on the composition of the barriers. As it can be shown in Fig. \ref{tvsb},
         there is a severe maximum for the case of pure quantum wells.
     }
 \end{poster}
