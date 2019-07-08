@@ -7,7 +7,6 @@
 \usepackage{float}
 \usepackage{natbib}
 \usepackage{etoolbox}
-\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 
 \graphicspath{{images/}} % Directory in which figures are stored
 
@@ -17,9 +16,17 @@
 \definecolor{headerfontcol}{RGB}{255,255,255} % Text color for the header text in the content boxes
 \definecolor{boxcolor}{RGB}{255,255,255} % Background color for the content in the content boxes
 
-\def\bibfont{\footnotesize}
+\def\bibfont{\tiny}
 
 \renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+\renewcommand{\bibsection}{}
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\let\oldfootnotesize\footnotesize
+\renewcommand*{\footnotesize}{\oldfootnotesize\tiny}
+
+\renewcommand*\footnoterule{}
 
 \begin{document}
 
@@ -37,28 +44,35 @@
     headerFontColor=headerfontcol, % Text color for the header text in the content boxes
     boxColorOne=boxcolor, % Background color for the content in the content boxes
     headershape=roundedright, % Specify the rounded corner in the content box headers
-    headerfont=\Large\sf\bf, % Font modifiers for the text in the content box headers
+    headerfont=\sf\bf, % Font modifiers for the text in the content box headers
     textborder=rectangle,
     background=user,
     headerborder=open, % Change to closed for a line under the content box headers
     boxshade=plain
     }{}
     {Calculation of Auger recombination thresholds in narrow gap HgCdTe based QW heterostructures} % Poster title
-    {\vspace{1em} Kulikov N.S. \footnotemark[1], Rumyantsev V.V. \footnotemark[1] \footnotemark[2], Zholudev M.S. \footnotemark[2], Utochkin V.V. \footnotemark[1] \footnotemark[2], Morozov S.V. \footnotemark[1]  \\ % Author names
-    \footnotetext[1]{Lobachevsky State University of Nizhni Novgorod}
-    \footnotetext[2]{Institute for Physics of Microstructures RAS}
-    {\smaller neilkulikov@gmail.com}} % Author email addresses
+    {\scriptsize{Kulikov N.S. \footnotemark[1] (neilkulikov@gmail.com), Dubinov A.A. \footnotemark[2], 
+    Aleshkin V.Ya. \footnotemark[2], Rumyantsev V.V. \footnotemark[1] \footnotemark[2], 
+    Fadeev M.A. \footnotemark[2] \footnotemark[3], Utochkin V.V. \footnotemark[1] \footnotemark[2], 
+    Mikhailov N.N. \footnotemark[4] \footnotemark[5], Dvoretsky S.A. \footnotemark[4],
+    Morozov S.V. \footnotemark[2]}  \\ % Author names
+        \tiny{${}^1${Lobachevsky State University of Nizhni Novgorod}; 
+        ${}^2${Institute for Physics of Microstructures RAS};
+        ${}^3${Laboratoire Charles Coulomb (L2C), Universite de Montpellier, Montpellier};
+        ${}^4${A.V.Rzhanov Institute of Semiconductor Physics, SBRAS, Novosibirsk};
+        ${}^5${Novosibirsk State University, Novosibirsk}}
+    } % Author email addresses
     {\includegraphics[scale=0.75]{logo.png}}
-
 
     \headerbox{Abstract}{name=intro,column=0,row=0}{
         Auger recombination is a three-particle threshold process. It can be considered 
         that as a result of the recombination of two particles, the third one acquires 
         high energy and momentum. This effect reduces the population inversion and heats 
         up charge carriers, which leads to its competition with the process of 
-        stimulated radiation. An obvious way to reduce the rate of such a process is to 
-        increase the Auger threshold energy \cite{Rumyantsev:IOP:2018}. It can be defined as the total kinetic energy 
-        of the initial particles.
+        radiative recombination. An obvious way to reduce the rate of such a process is to 
+        increase the Auger threshold energy \cite{Rumyantsev:IOP:2018}, 
+        \cite{Marcinkevich:PRB:2017}. It can be defined as the total kinetic energy of the 
+        initial particles.
     }
 
     \headerbox{Analityc relations}{name=anal,column=0,row=0,below=intro}{
@@ -87,15 +101,19 @@
             \nabla \varepsilon_1(\vec{k}_1) = \nabla \varepsilon_2(\vec{k}_2) = \nabla \varepsilon_h(\vec{k}_h);
         \end{equation}
 
-        In most cases, this leads to the fact that the CCHC process is dominant.
+        In most cases, this leads to the fact that the CCHC process is dominant. Despite this, it can be observed 
+        resonance phenomena involving several valence subbands.
     }
 
     \headerbox{Algorithm description}{name=algo,column = 0,below=anal}{
+        In HgCdTe the bands are not parabolic thus the calculations of Auger recombination rates 
+        for classical semiconductors are not applicable. 
         The energy-momentum law can be calculated for HgCdTe heterostructures in the Kane 8x8 
-        model \cite{Zholudev:PRB:2012}. It can be interpolated with Akima cubic splines.
+        model \cite{Zholudev:PRB:2012}. It can be interpolated with the Akima cubic splines.
         This trick provides enough smoothness and also helps to avoid parasitic oscillations.
 
-        The function \ref{gfunc} can be optimized with the Lagrange method. Starting points can be 
+        %The function (\ref{gfunc}) can be optimized with the Lagrange method. 
+        Starting points for (\ref{gfunc}) optimization can be 
         selected on sites with the same derivative \& second derivative sign. This fact ensures 
         finding the required points.
 
@@ -114,14 +132,7 @@
             %\printbibliography[heading=none]
         }
 
-
-    \headerbox{Experimental spectrum}{name=spec,column=1,span=2}{
-                \centering{
-                    \includegraphics[width=0.9\linewidth]{new_18um_spectre.pdf}
-                    \captionof{figure}{\label{spec}Stimulated emission spectra}
-                }
-                }
-    \headerbox{Auger threshold energy vs. barriers}{name=tvsb,column=1,span=2,below=spec}{
+    \headerbox{Auger threshold energy vs. barriers}{name=tvsb,column=1,span=2}{
                 \centering{
                     \includegraphics[width=0.9\linewidth]{de_vs_x.pdf}
                     \captionof{figure}{\label{tvsb}The dependence of Auger-threshold energy 
@@ -129,30 +140,36 @@
                     in barriers with fixed temperature and $\varepsilon_g$.}
                 }
     }
-    \headerbox{Comparison at various Cd\%}{name=pimp,column=1,span=1,below=tvsb,above=bottom}{
-                \begin{minipage}[h]{1.\linewidth}
-                    \includegraphics[width=\linewidth]{18um_p_vs_i.pdf}
-                    \captionof{figure}{\label{pimp}Threshold Auger processes 
-                    in $Hg_{1-x} Cd_x Te$ QWs for $x = 0.1,~x=0$.}
-                \end{minipage}
+    \headerbox{Comparison at various Cd\%}{name=pimp,column=1,span=1,below=tvsb}{
+        \begin{minipage}[h]{1.\linewidth}
+            \includegraphics[width=\linewidth]{18um_p_vs_i.pdf}
+            \captionof{figure}{\label{pimp}Threshold Auger processes 
+            in $Hg_{1-x} Cd_x Te$ QWs for $x = 0.1,~x=0$.}
+        \end{minipage}
     }
-                
+        
     \headerbox{Discussion}{name=spec,column=2,span=1,below=tvsb}{ 
         We consider the structure of the composition $Hg_{0.9} Cd_{0.1}Te/Cd_{0.65} Hg_{0.35} Te$
         with 10 unrelated quantum wells 8.7 nm thick. It allows to observe stimulated radiation 
-        with $\lambda \approx 18~\mu m$ close to 40 K.
+        with $\lambda \approx 18~\mu m$ close to 40 K (Fig. \ref{spec}).
 
-        On Fig. \ref{spec} we can see the SE spectre at T = 40 K.
-        Continuous lines are responsible for the structure described
+        On Fig. \ref{pimp} continuous lines are responsible for the structure described
         above, shaded lines are responsible for the structure without 
         cadmium in the QWs.
+
         We can investigate the effect of cadmium content in quantum wells 
         on threshold energy. As it can be shown, lower concentration of Cd
         reduces side maximums and increases threshold energy.
-        
+
         It would be interesting to investigate the dependence of the threshold 
         energy on the composition of the barriers. As it can be shown in Fig. \ref{tvsb},
         there is a severe maximum for the case of pure quantum wells.
+    }
+    \headerbox{Experimental spectrum}{name=spec,column=1,span=2,below=pimp,above=bottom}{
+                \centering{
+                    \includegraphics[width=0.9\linewidth]{new_18um_spectre.pdf}
+                    \captionof{figure}{\label{spec}Stimulated emission spectra}
+                }
     }
 \end{poster}
 \end{document}

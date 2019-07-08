@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.3)  6 JUL 2019 09:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.3)  8 JUL 2019 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,18 +754,18 @@ Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -871,27 +871,27 @@ Package caption Info: End \AtBeginDocument code.
 <images/logo.png, id=29, 134.5025pt x 48.18pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 51.
+Package pdftex.def Info: images/logo.png  used on input line 65.
 (pdftex.def)             Requested size: 100.8766pt x 36.13489pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
+LaTeX Font Info:    Try loading font information for U+msa on input line 65.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+LaTeX Font Info:    Try loading font information for U+msb on input line 65.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 62.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 76.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (14.4028pt too wide) detected at line 91
+Overfull \hbox (14.4028pt too wide) detected at line 106
 []
  []
 
@@ -902,42 +902,44 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 (./main.bbl
-Underfull \hbox (badness 4366) in paragraph at lines 4--10
-[]\T1/cmr/m/n/8 VV Rumyant-sev, NS Ku-likov, AM Kadykov,
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
+[]\T1/cmr/m/n/5 M Marcinkiewicz, San-dra Ruf-fe-nach, SS Kr-ish-topenko,
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 12--18
+[]\T1/cmr/m/n/5 VV Rumyant-sev, NS Ku-likov, AM Kadykov, MS Zholudev,
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 20--26
+[]\T1/cmr/m/n/5 M. Zholudev, F. Teppe, M. Or-lita, C. Con-sejo, J. Tor-
  []
 
 )
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-<images/new_18um_spectre.pdf, id=32, 609.16113pt x 334.83469pt>
-File: images/new_18um_spectre.pdf Graphic file (type pdf)
-<use images/new_18um_spectre.pdf>
-Package pdftex.def Info: images/new_18um_spectre.pdf  used on input line 123.
-(pdftex.def)             Requested size: 392.28181pt x 215.62184pt.
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-<images/de_vs_x.pdf, id=33, 433.62pt x 289.08pt>
+<images/de_vs_x.pdf, id=32, 433.62pt x 289.08pt>
 File: images/de_vs_x.pdf Graphic file (type pdf)
 <use images/de_vs_x.pdf>
-Package pdftex.def Info: images/de_vs_x.pdf  used on input line 131.
+Package pdftex.def Info: images/de_vs_x.pdf  used on input line 142.
 (pdftex.def)             Requested size: 392.28181pt x 261.53258pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-<images/18um_p_vs_i.pdf, id=34, 346.6482pt x 322.57703pt>
+<images/18um_p_vs_i.pdf, id=33, 346.6482pt x 322.57703pt>
 File: images/18um_p_vs_i.pdf Graphic file (type pdf)
 <use images/18um_p_vs_i.pdf>
-Package pdftex.def Info: images/18um_p_vs_i.pdf  used on input line 138.
+Package pdftex.def Info: images/18um_p_vs_i.pdf  used on input line 149.
 (pdftex.def)             Requested size: 207.93826pt x 193.49847pt.
 
-Underfull \hbox (badness 7649) in paragraph at lines 138--138
-[]\T1/cmr/bx/n/9 Figure 3: |[]\T1/cmr/m/n/9 Thresh-old Auger pro-cesses in
+Underfull \hbox (badness 7649) in paragraph at lines 149--149
+[]\T1/cmr/bx/n/9 Figure 2: |[]\T1/cmr/m/n/9 Thresh-old Auger pro-cesses in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--138
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
 
  []
 
@@ -945,38 +947,46 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Underfull \hbox (badness 1259) in paragraph at lines 156--156
+Underfull \hbox (badness 1259) in paragraph at lines 167--167
 \OML/cmm/m/it/10 Hg[]Cd[]Te=Cd[]Hg[]Te$ \T1/cmr/m/n/10 with 10 un-re-
  []
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+<images/new_18um_spectre.pdf, id=34, 609.16113pt x 334.83469pt>
+File: images/new_18um_spectre.pdf Graphic file (type pdf)
+<use images/new_18um_spectre.pdf>
+Package pdftex.def Info: images/new_18um_spectre.pdf  used on input line 173.
+(pdftex.def)             Requested size: 392.28181pt x 215.62184pt.
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (2.22534pt too wide) in paragraph at lines 51--157
+Overfull \hbox (2.22534pt too wide) in paragraph at lines 65--174
 [][]  [] 
  []
 
 [2
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/logo.png> <./images/new_18um_spectre.pdf> <./images/de_vs_x.pdf
-
-pdfTeX warning: pdflatex (file ./images/de_vs_x.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./images/18um_p_vs_i.pdf
+s/logo.png> <./images/de_vs_x.pdf> <./images/18um_p_vs_i.pdf
 
 pdfTeX warning: pdflatex (file ./images/18um_p_vs_i.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
+> <./images/new_18um_spectre.pdf
+
+pdfTeX warning: pdflatex (file ./images/new_18um_spectre.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
 >] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18104 strings out of 492649
- 354644 string characters out of 6129623
- 425669 words of memory out of 5000000
- 21554 multiletter control sequences out of 15000+600000
- 28656 words of font info for 81 fonts, out of 8000000 for 9000
+ 18072 strings out of 492649
+ 354341 string characters out of 6129623
+ 427117 words of memory out of 5000000
+ 21536 multiletter control sequences out of 15000+600000
+ 20648 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,25n,92p,823b,1007s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,25n,92p,769b,962s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/c
 m-super-t1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
@@ -991,19 +1001,17 @@ r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/l
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loca
 l/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/te
+texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
+ive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/
 2018/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/20
 18/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/cm-super/sfti0800.pfb>
-Output written on main.pdf (1 page, 332122 bytes).
+/texmf-dist/fonts/type1/public/cm-super/sfti0500.pfb>
+Output written on main.pdf (1 page, 334216 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
+ 234 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  135 words of extra memory for PDF output out of 10000 (max. 10000000)
 
